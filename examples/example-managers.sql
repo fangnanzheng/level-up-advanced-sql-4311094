@@ -5,6 +5,6 @@ SELECT emp.firstName,
     emp.title,
     mng.firstName AS ManagerFirstName,
     mng.lastName AS ManagerLastName
-FROM employees emp
-INNER JOIN employees mng
+FROM employee emp
+INNER JOIN employee mng
     ON emp.managerId = mng.employeeId
